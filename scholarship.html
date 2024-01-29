@@ -1,0 +1,65 @@
+<html><head><title>Scholarship</title></head>
+<body><center>
+    <form name=f method=post action=scholarship1.jsp>
+        <table border=2>
+            <tr>
+                <th align="left">Scholarship Amount</th>
+                <th><input type=text name=t1></th>
+            </tr>
+            <tr>
+                <th align="left">Program</th>
+                <th><input type=text name=t2></th>
+            </tr>
+            <tr>
+                <th align="left">Session</th>
+               <th><input type=text name=t3></th>
+            </tr>
+            <tr>
+                <th align="left">Description</th>
+                <th><input type=text name=t4></th>
+            </tr>
+            <tr>
+                <th align="left">Date</th>
+                <th><input type=text name=t5></th>
+            </tr>
+            <tr>
+                <th colspan=2>
+                    <input type=button value="New" onclick="clean()">
+                    <input type=submit name=b1 value="Save">
+                    <input type=submit name=b1 value="Update">
+                    <input type=submit name=b1 value="Delete">
+                    <input type=button value="Menu" onclick="menu_open()">
+                </th>
+            </tr>
+            <tr>
+                <th colspan=2>
+                    <input type=submit name=b1 value="AllSearch">
+                    <select name=s>
+                        <option>Sch_amt</option>
+                        <option>Program</option>
+                        <option>Session</option>
+                        <option>Descr</option>
+                    </select>
+                    <input type=text name=t6>
+                    <input type=submit name=b1 value="Search">
+                </th>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
+<script>
+    function clean()
+    {
+        f.t1.value=""
+        f.t2.value=""
+        f.t3.value=""
+        f.t4.value=""
+        f.t5.value=""
+        f.t6.value=""
+    }
+    function menu_open()
+    {
+    	window.open("menu.html","_self")
+    }
+</script>

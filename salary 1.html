@@ -1,0 +1,77 @@
+<link rel="stylesheet" href="style_salary.css">
+<html><head><title>Salary</title></head>
+<body>
+    <form name=f method=post action=salary1.jsp> 
+        <table border=25>
+            <marquee scrollamount=2 direction="down"><h1>Salary Details</h1></marquee>
+            <tr> 
+                <th align="left">Employee ID</th>
+                <th><input type=text name=t1></th>
+            </tr>
+            <tr> 
+                <th align="left">Basic Salary</th>
+                <th><input type=text name=t2></th>
+            </tr>
+            <tr> 
+                <th align="left">Current Salary</th>
+                <th><input type=text name=t3></th>
+            </tr>
+            <tr> 
+                <th align="left">Deduction</th>
+                <th><input type=text name=t4></th>
+            </tr>
+            <tr> 
+                <th align="left">Allowance</th>
+                <th><input type=text name=t5></th>
+            </tr>
+            <tr> 
+                <th align="left">Net Pay</th>
+                <th><input type=text name=t6></th>
+            </tr>
+            <tr> 
+                <th align="left">Other Pay</th>
+                <th><input type=text name=t7></th>
+            </tr>
+            <tr>
+                <th colspan=2>
+                    <input type=button value="New" onclick="clean()">
+                    <input type=submit name=b1 value="Save">
+                    <input type=submit name=b1 value="Update">
+                    <input type=submit name=b1 value="Delete">
+                    <input type=button value="Menu" onclick="menu_open()">
+                </th>
+            </tr>
+            <tr>
+                <th colspan=2>
+                    <input type=submit name=b1 value="AllSearch">
+                    <select name=s>
+                        <option>Empid</option>
+                        <option>Bsalary</option>
+                        <option>Curr_salary</option>
+                        <option>Deduction</option>
+                    </select>
+                    <input type=text name=t8>
+                    <input type=submit name=b1 value="Search">
+                </th>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
+<script>
+    function clean()
+    {
+        f.t1.value=""
+        f.t2.value=""
+        f.t3.value=""
+        f.t4.value=""
+        f.t5.value=""
+        f.t6.value=""
+        f.t7.value=""
+        f.t8.value=""
+    }
+    function menu_open()
+    {
+    	window.open("menu.html","_self")
+    }
+</script>

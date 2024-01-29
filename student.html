@@ -1,0 +1,93 @@
+<link rel="stylesheet" href="style_student.css">
+<html><head><title>Student</title></head>
+<body><center>
+    <form name=f method=post action=student1.jsp>
+        <marquee scrollamount=1 direction="down">Student Details</marquee>
+        <table border=30>
+        <tr>
+                <th align="left">Registration Number</th>
+                <th><input type=text name=t1></th>
+            </tr>
+            <tr>
+                <th align="left">Student Name</th>
+                <th><input type=text name=t2></th>
+            </tr>
+            <tr>
+                <th align="left">Father Name</th>
+                <th><input type=text name=t3></th>
+            </tr>
+            <tr>
+                <th align="left">Phone Number</th>
+                <th><input type=text name=t4></th>
+            </tr>
+            <tr>
+                <th align="left">Address</th>
+                <th><input type=text name=t5></th>
+            </tr>
+            <tr>
+                <th align="left">Program</th>
+                <th><input type=text name=t6></th>
+            </tr>
+            <tr>
+                <th align="left">Current Semester</th>
+                <th><input type=text name=t7></th>
+            </tr>
+            <tr>
+                <th align="left">Section</th>
+                <th><input type=text name=t8></th>
+            </tr>
+            <tr>
+                <th align="left">Status</th>
+                <th><input type=text name=t9></th>
+            </tr>
+            <tr>
+                <th align="left">Enrollment Date</th>
+                <th><input type=text name=t10></th>
+            </tr>
+            <tr>
+                <th colspan=2>
+                    <input type=button Value="New" onclick="clean()">
+                    <input type=submit value="Save" name=b1>
+                    <input type=submit value="Update" name=b1>
+                    <input type=submit value="Delete" name=b1>
+                   <input type=button value="Menu" onclick="menu_open()">
+                </th>
+            </tr>
+            <tr>
+                <th colspan=2>
+                    <input type=submit value="AllSearch" name=b1>
+                    <select name=s>
+                        <option>Regno</option>
+                        <option>Name</option>
+                        <option>Fname</option>
+                        <option>Phone</option>
+                    </select>
+                    <input type=text name=t11>
+                    <input type=submit value="Search" name=b1> 
+                </th>
+            </tr>
+            </table>
+            </form>
+            </center>
+            </body>
+            </html>
+<script>
+    function clean()
+    {
+        f.t1.value=""
+        f.t2.value=""
+        f.t3.value=""
+        f.t4.value=""
+        f.t5.value=""
+        f.t6.value=""
+        f.t7.value=""
+        f.t8.value=""
+        f.t9.value=""
+        f.t10.value=""
+        f.t11.value=""
+    }
+   function menu_open()
+    {
+    	window.open("menu.html","_self")
+    }
+</script>
